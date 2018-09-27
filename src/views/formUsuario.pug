@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    // register form
+    form(method='POST' action='/formulario' enctype="application/json")
+      div.form-group
+        label(for='lastNamee') Last Name:
+        input#lastName.form-control(type='text', placeholder='last name' name='lastName') 
+      div.form-group
+        label(for='firstNamee') First Name:
+        input#firstName.form-control(type='text', placeholder='first name' name='firstName')
+      div.form-group
+        label(for='agee') Age:
+        input#age.form-control(type='text', placeholder='age' name='age')
+      div.form-group
+        label(for='usuarioo') Usuario:
+        input#usuario.form-control(type='text', placeholder='usuario' name='usuario')
+      button.btn.btn-primary(type='submit') Registrar
+

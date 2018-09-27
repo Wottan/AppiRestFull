@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    title= title
+
+    h1= message
+    ul
+      each user in users
+        li
+          |#{user.firstName}
+      else
+        li There are no values
